@@ -16,6 +16,8 @@ Viral Signal treats top-performing content as raw data, runs three specialized a
 
 No vibes. Statistically significant patterns or nothing.
 
+**Why bet on AI for this at all?** Because AI's single best feature is mimicry — the ability to reproduce a pattern once that pattern is made explicit. Hand it the statistical DNA of the top 3 creators in the niche you're building toward, and it can climb very high, reaching extreme performance. Theoretically, though, it never exceeds the ceiling set by the humans it learned from — it compresses what they do, it doesn't surpass it.
+
 ---
 
 ## Pipeline
@@ -144,12 +146,12 @@ Phase 4 · Generation     Topic in. Pattern-constrained content out.
 | Layer | Tool |
 |---|---|
 | Data collection | yt-dlp · youtube-transcript-api |
-| Agent inference | Ollama (local) — zero API cost |
+| Agent inference | Ollama, self-hosted on rented GPU compute |
 | Data models | Pydantic v2 |
 | Statistical validation | pandas · scipy |
 | Orchestration | Python — plain agent loops, no framework overhead |
-| Storage | Local JSON store (filesystem) |
+| Storage | JSON store on rented cloud server storage |
 
 ---
 
-*The pipeline runs entirely locally. No cloud APIs, no per-token cost, no data leaving the machine.*
+*The pipeline runs entirely on rented infrastructure — dedicated server storage and GPU compute powering large-scale AI data training and inference. Self-hosted models, no third-party inference APIs, no per-token cost.*
